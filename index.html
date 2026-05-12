@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giftly — Thoughtful Gifts for Everyone</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎁</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">🎁 Giftly</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="cartCount" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <div class="hero-text fade-in">
+        <h1>Find the Perfect Gift for Every Moment</h1>
+        <p>Curated, thoughtful presents that make people smile.</p>
+        <a href="products.html" class="btn btn-primary">Shop Now</a>
+      </div>
+      <div class="hero-image fade-in">
+        <img id="heroImage" alt="Beautifully wrapped gifts" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Gifts</h2>
+      <div class="product-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="category-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Beautiful packaging and quick delivery. My friend loved it!"</p>
+          <strong>— Sarah K.</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>"Giftly made my anniversary unforgettable. Highly recommended."</p>
+          <strong>— David M.</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>"Tons of unique gifts I couldn't find anywhere else."</p>
+          <strong>— Priya R.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Join Our Newsletter</h2>
+      <p>Get 10% off your first order and receive curated gift ideas weekly.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🎁 Giftly</h3>
+        <p>Thoughtful gifts, delivered with care.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a>
+        <a href="products.html">Categories</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Giftly. All rights reserved.</div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/imageData.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

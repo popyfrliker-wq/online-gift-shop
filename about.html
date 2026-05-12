@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Giftly</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎁</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">🎁 Giftly</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="cartCount" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>About Giftly</h1>
+      <p>Our story, our team, our mission</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about-story">
+      <h2>Our Story</h2>
+      <p>Giftly started in 2020 with a simple idea — gifting should feel personal, easy, and joyful. We work with small artisans and creative makers around the world to bring you a curated selection of gifts for every occasion.</p>
+      <p>Whether it's a birthday, anniversary, or a "just because" moment, we believe the right gift can make someone's day.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Our Numbers</h2>
+      <div class="stats-grid">
+        <div class="stat"><h3>50K+</h3><p>Happy Customers</p></div>
+        <div class="stat"><h3>1,200+</h3><p>Curated Gifts</p></div>
+        <div class="stat"><h3>30+</h3><p>Countries Served</p></div>
+        <div class="stat"><h3>4.9★</h3><p>Average Rating</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Meet the Team</h2>
+      <div class="team-grid" id="teamGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🎁 Giftly</h3>
+        <p>Thoughtful gifts, delivered with care.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a>
+        <a href="products.html">Categories</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Giftly. All rights reserved.</div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/imageData.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
